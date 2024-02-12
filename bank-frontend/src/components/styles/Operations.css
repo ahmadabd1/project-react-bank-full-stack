@@ -1,0 +1,64 @@
+.operations{
+    text-align: center;
+}
+/* OperationsPage.css */
+h2{
+    color: orange;
+    font-style: normal;
+}
+.operations-page {
+    margin: 20px;
+  }
+  
+  .transactions {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 5px;
+
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: orange;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.Withdraw{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.Deposit{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-group button:last-child {
+    margin-right: 0;
+  }
+  
+  .button-group button:hover {
+    background-color: #000000;
+  }
+  
