@@ -7,7 +7,7 @@ export default function TotalCategory({ totalCategores }) {
    
         <tr>
           <td>{totalCategores._id}</td>
-          <td>{-totalCategores.event_count}$</td>
+          <td style={{color: totalCategores.event_count>0 ? "red" : "green"}}>{-totalCategores.event_count}$</td>
         </tr>
       
     </>

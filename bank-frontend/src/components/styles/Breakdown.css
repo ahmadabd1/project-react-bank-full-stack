@@ -3,7 +3,7 @@
     border-collapse: collapse;
     align-items: center;
     color: orange;
-    margin-left: 40%;
+    margin-inline: auto;
 }
 
 th,

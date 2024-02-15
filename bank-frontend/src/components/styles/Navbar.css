@@ -6,6 +6,12 @@
     background: rgb(241, 137, 0);
 
 }
+.navbar-links{
+  display: flex;
+  align-items: center;
+  column-gap: 5vw;
+  margin-left: 5vw;
+}
 .balance{
     text-align: end;
     margin-right: 2vw;
@@ -16,9 +22,13 @@
 .navbar {
     background-color: rgb(241, 137, 0);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
+    /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
   }
   
   .navbar a {
