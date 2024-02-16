@@ -16,7 +16,7 @@ export default function TotalCategory({ totalCategores }) {
  
   const handleMouseLeave = () => {
     setDisplay(null);
-    ([]);
+    setData([]);
   };
   return (
     <>
