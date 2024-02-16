@@ -80,7 +80,6 @@ export default function Transactions(props) {
     props.message("Transaction deleted successfully");
   };
 
-  // const [selectBothMonthAndYear,setSelectBothMonthAndYear]=useState({})
 
   const [transactionsMonthYear, setTransactionsMonthYear] = useState([])
 

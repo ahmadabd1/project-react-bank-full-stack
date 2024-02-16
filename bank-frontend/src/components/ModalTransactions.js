@@ -2,7 +2,6 @@ import React from 'react'
 import './styles/ModalTransaction.css'
 export default function ModalTransactions(props) {
     const category = props.data.data[0].category
-    console.log(props.data.data)
   return (
     <div>
     <div className="modal">

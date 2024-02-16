@@ -26,7 +26,6 @@ function App() {
   const updateBalance = async function (transactiomamount) {
     const newDataBalance = balance + transactiomamount;
     setBalance(balance + transactiomamount);
-    // updatBalanceData()
     const budget = await axios.put(
       "http://localhost:8080/balance/" + balanceId,
       { balance: newDataBalance }
