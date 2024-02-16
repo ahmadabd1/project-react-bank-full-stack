@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import TotalCategory from "./TotalCategory";
 import "../App.css";
 import axios from "axios";
+
+
 export default function Breakdown() {
+
   const [breakDown, setBreakDown] = useState([]);
 
   useEffect(() => {

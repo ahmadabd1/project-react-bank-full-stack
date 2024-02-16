@@ -82,7 +82,18 @@ router.get("/transactions/:month/:year", async (req, res) => {
       res.status(404).send(error);
     }
   });
-  
+  router.get("/breakdown/:category",async (req, res) =>{
+    const category = req.params.category
+    try {
+      Transaction.find({category}).then(function (transaction) {
+        res.send(transaction);
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(404).send(error);
+    }
+  });
+
 router.get("/balance", function (req, res) {
   try {
     Balance.find({}).then(function (balance) {

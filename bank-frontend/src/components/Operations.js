@@ -41,8 +41,8 @@ export default function Operations(props) {
     } else {
       await axios.post(`http://localhost:8080/transaction`, {
         amount: 1 * amount,
-        category: transactionType,
-        vendor: description,
+        category: description,
+        vendor:  transactionType,
         date:date
       });
       props.updateBalance(1 * amount);
@@ -65,8 +65,8 @@ export default function Operations(props) {
     } else {
       await axios.post(`http://localhost:8080/transaction`, {
         amount: -1 * amount,
-        category: transactionType,
-        vendor: description,
+        category:  description,
+        vendor: transactionType,
         date:date
       });
       props.updateBalance(-1 * amount);
@@ -104,15 +104,7 @@ export default function Operations(props) {
             onChange={handleAmountChange}
           />
         </div>
-        <div>
-          <label htmlFor="transactionType">Vendor</label>
-          <input
-            type="text1"
-            id="transactionType"
-            value={transactionType}
-            onChange={handleTransactionTypeChange}
-          />
-        </div>
+    
         <div>
           <label htmlFor="description">Category</label>
           <input
@@ -120,6 +112,15 @@ export default function Operations(props) {
             id="description"
             value={description}
             onChange={handleDescriptionChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="transactionType">Vendor</label>
+          <input
+            type="text1"
+            id="transactionType"
+            value={transactionType}
+            onChange={handleTransactionTypeChange}
           />
         </div>
         <br></br>
